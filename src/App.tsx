@@ -1,18 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./Landing";
+import Booking from "./Booking";
 
-function App() {
-
-
+export default function App() {
   return (
-    <>
-      <div>
-        <p className='text-3xl font-bold underline'>IS Tailwind working well this is an example</p>
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/book" element={<Booking />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App

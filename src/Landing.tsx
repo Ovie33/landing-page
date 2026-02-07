@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 function scrollToTopSmooth() {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -162,12 +163,12 @@ export default function PremiumLeadGenLanding() {
                 >
                   Get My Free Audit
                 </a>
-                <a
-                  href="#benefits"
-                  className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
+                <Link
+                  to="/book"
+                  className={`inline-flex items-center justify-center rounded-2xl bg-white/5 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:opacity-95`}
                 >
-                  See what you get
-                </a>
+                  Book a Free Call
+                </Link>
               </div>
 
               <div className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
