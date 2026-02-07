@@ -1,10 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-function scrollToTopSmooth() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
 type FormState = {
   fullName: string;
   email: string;
